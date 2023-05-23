@@ -2,9 +2,9 @@
 
 An `ws://`-based API to fetch YouTube livestream chat in real-time.
 
-## URLs
+## Usage
 
--   http://localhost:8080
+Base URL is located on http://localhost:8080.
 
 ### Endpoints
 
