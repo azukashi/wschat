@@ -17,6 +17,11 @@ app.get('/api/livechat', (req, res) => {
     res.status(400).json({ message: 'Please connect with WebSocket protocol to use this endpoint.' });
 });
 
+app.ws('/', async (ws, req) => {
+    await ws.send('Welcome!');
+    ws.close();
+});
+
 app.ws('/api/livechat', async (ws, req) => {
     // ws.on('open', () => {
     //     console.log('A new connection is made!');
