@@ -12,18 +12,18 @@ An `ws://`-based API to fetch YouTube livestream chat in real-time.
 | --------------- | ----------------- | -------------------------------- |
 | `/`             | HTTP - GET        | -                                |
 | `/`             | WebSocket         | -                                |
-| `/api/livechat` | WebSocket         | `?liveId` `?channelId` `?simple` |
+| `/api/livechat` | WebSocket         | `?channelId` `?liveId` `?simple` |
 
 ### Query usage
 
 | Query        | Required? | Description                                                                   |
 | ------------ | --------- | ----------------------------------------------------------------------------- |
-| `?liveId`    | **yes**   | YouTube Live ID. You can gather this from YouTube URL by copying `?v=` value. |
 | `?channelId` | **yes**   | **[Recommended]** YouTube Channel ID.                                         |
+| `?liveId`    | **yes**   | YouTube Live ID. You can gather this from YouTube URL by copying `?v=` value. |
 | `?simple`    | optional  | Simplify the returned data. Only returns the `message` object.                |
 
 > **Note**
-> Choose one. If `?channelId` is specified, `?liveId` in the current stream is automatically acquired. You don't need to specify `?liveId`.
+> Choose one. If `?channelId` is specified, `?liveId` in the current stream is automatically acquired, you don't need to specify `?liveId`.
 > But if you are using `?liveId`, you don't need to specify `?channelId` because it works without Channel ID.
 
 ## License
