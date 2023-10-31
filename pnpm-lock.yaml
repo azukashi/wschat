@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@types/express-ws':
-    specifier: 3.0.1
-    version: 3.0.1
+    specifier: 3.0.3
+    version: 3.0.3
   nodemon:
     specifier: 3.0.1
     version: 3.0.1
@@ -47,8 +47,8 @@ packages:
       '@types/send': 0.17.1
     dev: true
 
-  /@types/express-ws@3.0.1:
-    resolution: {integrity: sha512-VguRXzcpPBF0IggIGpUoM65cZJDfMQxoc6dKoCz1yLzcwcXW7ft60yhq3ygKhyEhEIQFtLrWjyz4AJ1qjmzCFw==}
+  /@types/express-ws@3.0.3:
+    resolution: {integrity: sha512-DUPy7Ty4pven+6QgsD/QcDi9P9KRpcSaxWOfuQYLFYrsUQdtmSDAb9tYUJDad4FKkh7Ijef3PRe2EFensEVJmQ==}
     dependencies:
       '@types/express': 4.17.17
       '@types/express-serve-static-core': 4.17.35
@@ -773,6 +773,7 @@ packages:
 
   /tslib@2.5.2:
     resolution: {integrity: sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==}
+    requiresBuild: true
     dev: false
     optional: true
 
